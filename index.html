@@ -348,7 +348,7 @@
       </section>
     </main>
     <footer>
-      <div class="container">
+      <div class="container ">
         <div class="footer-section">
           <div class="adress-footer">
             <a class="logo-link" href="./index.html"
@@ -441,6 +441,28 @@
             />
           </svg>
         </button>
+        <h4 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h4>
+        <form class="backdrop-form" novalidate autocomplete="on">
+        <div class="input-backdrop">
+          <svg>
+            <use href="./images/icons/icons.svg#icon-person"></use>
+          </svg>
+          <label class="backdrop-form-label" for="user-name">Имя</label>
+          <input class="backdrop-form-input" id="user-name" type="text" name="user-name">
+        </div>
+        <div class="input-backdrop">
+          <label class="backdrop-form-label" for="user-phone">Телефон</label>
+          <input class="backdrop-form-input" id="user-phone" type="number" name="user-phone">
+        </div>
+        <div class="input-backdrop">
+          <label class="backdrop-form-label" for="user-mail">Почта</label>
+          <input class="backdrop-form-input" id="user-mail" type="email" name="user-mail">
+        </div>
+        <div class="input-backdrop">
+          <label class="backdrop-form-label" for="user-comment">Комментарий</label>
+          <input class="backdrop-form-input backdrop-form-comment" id="user-comment" type="text" name="user-comment" placeholder="Введите текст">
+        </div>
+      </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -39,6 +39,7 @@ body{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
   }
 h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;
@@ -599,9 +600,10 @@ left: 0;
 }
 
 .footer-email{
-  margin-top: 12px;
-  margin-left: 93px;
-  position: relative;
+
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 570px;
   height: 86px;
 }
@@ -634,6 +636,9 @@ left: 0;
 .footer-input{
   width: 358px;
   height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border-radius: 4px;
   padding-left: 16px;
   padding-top: 15px;
@@ -656,6 +661,7 @@ left: 0;
 .footer-input:focus {
   border: 1px solid var(--button-hover);
 }
+
 
 /* portfolio */
 
@@ -843,8 +849,42 @@ left: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .is-hidden{
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.backdrop-title{
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--logo-color);
+  margin-top: 40px;
+  margin-left: 41px;
+}
+.backdrop-form{
+  margin-left: 40px ;
+  margin-right: 40px;
+  margin-top: 12px;
+}
+.input-backdrop{
+  margin-bottom: 10px;
+}
+.backdrop-form-label{
+  display: block;
+  color: rgba(117, 117, 117, 1);
+  font-size: 12px;
+  line-height: 1.67;
+  margin-bottom: 4px;
+
+}
+.backdrop-form-input{
+ width: 100%;
+ border: 1px solid rgba(33, 33, 33, 0.2);
+ height: 40px;
+ border-radius: 4px;
+}
+.backdrop-form-comment{
+  height: 120px;
+  padding: 12px 16px;
 }
