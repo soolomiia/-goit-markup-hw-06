@@ -444,6 +444,9 @@
         <h4 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h4>
         <form class="backdrop-form" novalidate autocomplete="on">
         <div class="input-backdrop">
+          <svg class="media-icon-join">
+            <use href="./images/icons.svg#icon-man"></use>
+          </svg>
           <label class="backdrop-form-label" for="user-name">Имя</label>
           <input class="backdrop-form-input" id="user-name" type="text" name="user-name">
         </div>
@@ -460,6 +463,11 @@
           <textarea class="backdrop-form-input backdrop-form-comment" id="user-comment" type="text" name="user-comment" placeholder="Введите текст"></textarea>
         </div>
       </form>
+      <div class="form-privacy">
+        <input class="order-privacy-imput" type="checkbox" name="privacy-checkbox">
+        <span class="icon-checkbox"></span> Соглашаюсь с рассылкой и принимаю
+        <a class="link-background" href="">Условия договора</a>
+      </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
