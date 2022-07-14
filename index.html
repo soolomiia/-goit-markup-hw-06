@@ -444,23 +444,20 @@
         <h4 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h4>
         <form class="backdrop-form" novalidate autocomplete="on">
         <div class="input-backdrop">
-          <svg class="media-icon-join">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
           <label class="backdrop-form-label" for="user-name">Имя</label>
           <input class="backdrop-form-input" id="user-name" type="text" name="user-name">
         </div>
         <div class="input-backdrop">
           <label class="backdrop-form-label" for="user-phone">Телефон</label>
-          <input class="backdrop-form-input" id="user-phone" type="number" name="user-phone">
+          <input class="backdrop-form-input" id="user-phone" type="tel" name="user-phone">
         </div>
         <div class="input-backdrop">
           <label class="backdrop-form-label" for="user-mail">Почта</label>
           <input class="backdrop-form-input" id="user-mail" type="email" name="user-mail">
         </div>
-        <div class="input-backdrop">
+        <div class=" input-backdrop-last ">
           <label class="backdrop-form-label" for="user-comment">Комментарий</label>
-          <input class="backdrop-form-input backdrop-form-comment" id="user-comment" type="text" name="user-comment" placeholder="Введите текст">
+          <textarea class="backdrop-form-input backdrop-form-comment" id="user-comment" type="text" name="user-comment" placeholder="Введите текст"></textarea>
         </div>
       </form>
       </div>
