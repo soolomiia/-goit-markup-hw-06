@@ -415,9 +415,9 @@
             </label>
             </form>
             <button type="submit" class="fotter-email-button"> Подписаться 
-              <svg class="icon-plane" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
-                </svg>               
+              <svg class="icon-plane" width="24" height="24" >
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -426,47 +426,50 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" type="button" data-modal-close>
-          <svg class=".close-icon-backdrop"
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="15" cy="15" r="15" fill="white" />
-            <circle cx="15" cy="15" r="14.5" stroke="black" stroke-opacity="0.1" />
-            <path
-              d="M21 10.1079L19.8921 9L15.5 13.3921L11.1079 9L10 10.1079L14.3921 14.5L10 18.8921L11.1079 20L15.5 15.6079L19.8921 20L21 18.8921L16.6079 14.5L21 10.1079Z"
-              fill="black"
-            />
+          <svg class="icon-close" >
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h4 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h4>
+        <div class="backdrop-title-modal">
+          <h4 class="backdrop-title">Залиште свої дані, ми вам передзвонимо</h4>
+        </div>
         <form class="backdrop-form" novalidate autocomplete="on">
         <div class="input-backdrop">
-          <svg class="media-icon-join">
+          <svg class="media-icon-join1">
             <use href="./images/icons.svg#icon-man"></use>
           </svg>
-          <label class="backdrop-form-label" for="user-name">Имя</label>
+          <label class="backdrop-form-label" for="user-name">Ім'я</label>
           <input class="backdrop-form-input" id="user-name" type="text" name="user-name">
         </div>
         <div class="input-backdrop">
+          <svg class="media-icon-join2">
+            <use href="./images/icons.svg#icon-phone1"></use>
+          </svg>
           <label class="backdrop-form-label" for="user-phone">Телефон</label>
           <input class="backdrop-form-input" id="user-phone" type="tel" name="user-phone">
         </div>
         <div class="input-backdrop">
-          <label class="backdrop-form-label" for="user-mail">Почта</label>
+          <svg class="media-icon-join3" >
+            <use href="./images/icons.svg#icon-mail1"></use>
+          </svg>
+          <label class="backdrop-form-label" for="user-mail">Пошта</label>
           <input class="backdrop-form-input" id="user-mail" type="email" name="user-mail">
         </div>
         <div class=" input-backdrop-last ">
-          <label class="backdrop-form-label" for="user-comment">Комментарий</label>
-          <textarea class="backdrop-form-input backdrop-form-comment" id="user-comment" type="text" name="user-comment" placeholder="Введите текст"></textarea>
+          <label class="backdrop-form-label" for="user-comment">Коментар</label>
+          <textarea class="backdrop-form-input backdrop-form-comment" id="user-comment" type="text" name="user-comment" placeholder="Введіть текст"></textarea>
         </div>
       </form>
       <div class="form-privacy">
         <input class="order-privacy-imput" type="checkbox" name="privacy-checkbox">
-        <span class="icon-checkbox"></span> Соглашаюсь с рассылкой и принимаю
-        <a class="link-background" href="">Условия договора</a>
+        <span class="icon-checkbox"></span>
+         Погоджуюся з розсилкою та приймаю
+        <a class="link-background" href="">Умови договору</a>
+        <div class="send-backdrop">
+        <button class="backdrop-button" type="submit">
+          Відправити
+        </button>
+      </div>
       </div>
       </div>
     </div>

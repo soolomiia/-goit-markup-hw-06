@@ -243,7 +243,6 @@ html {
     border-radius: 4px;
     border: 0;
     min-width: 13px;
-
 }
 
 
@@ -819,7 +818,6 @@ left: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 528px;
-  min-height: 581px;
   padding: 40px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
@@ -837,10 +835,17 @@ left: 0;
   background-color: var(--invert-text-color);
   padding: 0;
   cursor: pointer;
+  transition-property: fill ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close{
+  width: 11px;
+  height: 11px;
+  fill: rgba(0, 0, 0, 1);
 }
 .close-icon-backdrop:hover,
 .close-icon-backdrop:focus {
- cursor: pointer;
  fill: var(--accent);
 }
 .close-icon-backdrop{
@@ -855,6 +860,38 @@ left: 0;
   pointer-events: none;
 }
 */
+.form-privacy{
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(117, 117, 117, 1); 
+  display: inline;
+}
+.backdrop-button{
+  padding: 10px 52px;
+  background-color: var(--button-hover);
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--invert-text-color);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+.send-backdrop{
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.backdrop-title-modal{
+  text-align: center;
+}
 .backdrop-title{
   font-size: 20px;
   line-height: 1.15;
@@ -869,9 +906,10 @@ left: 0;
 }
 .input-backdrop{
   margin-bottom: 10px;
+  position: relative;
 }
 .input-backdrop-last{
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .backdrop-form-label{
   display: block;
@@ -889,8 +927,15 @@ left: 0;
  border-radius: 4px;
  padding: 12px 42px;
  cursor: pointer;
-
+ transition-property: border ;
+ transition-duration: 250ms;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.backdrop-form-input:hover, 
+.backdrop-form-input:focus{
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+
 
 .backdrop-form-comment{
   display: block;
@@ -898,7 +943,6 @@ left: 0;
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -917,9 +961,53 @@ left: 0;
   letter-spacing: 0.01;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-privacy{
-  width: 400px;
+
+.link-background{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--accent);
+  
 }
-.media-icon-join{
+.form-privacy{
+  margin-bottom: 30px;
+}
+.media-icon-join1{
   fill: #000000;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  bottom: 14px;
+  left:15px ;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-form-input:hover .media-icon-join1, 
+.backdrop-form-input:focus  .media-icon-join1 {
+  fill: var(--accent);
+}
+.backdrop-form-input:hover .media-icon-join2, 
+.backdrop-form-input:focus .media-icon-join2 {
+  fill: var(--accent);
+}
+.backdrop-form-input:hover .media-icon-join3, 
+.backdrop-form-input:focus .media-icon-join3 {
+  fill: var(--accent);
+}
+.media-icon-join2{
+  fill: #000000;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  bottom: 14px;
+  left:15px ;
+}
+.media-icon-join3{
+  fill: #000000;
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  bottom: 14px;
+  left:15px ;
 }
