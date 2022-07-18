@@ -561,6 +561,7 @@ left: 0;
   list-style: none;
   display: flex;
   padding-left: 0;
+  
   margin: 0;
 
 }
@@ -609,7 +610,8 @@ left: 0;
 .link-join-icon:focus .media-icon-join{
   background-color: var(--accent);
 }
-.footer-form{
+
+.form-footer-email{
   display: flex;
   align-items: center;
 }
@@ -844,6 +846,7 @@ left: 0;
 }
 .backdrop-title-modal{
   text-align: center;
+  margin-bottom: 12px;
 }
 .backdrop-title{
   font-size: 20px;
@@ -904,9 +907,6 @@ left: 0;
 
 .backdrop-svg{
   fill: #000000;
-}
-.backdrop-form{
-  margin-top: 12px;
 }
 .input-backdrop{
   margin-bottom: 10px;
@@ -1055,16 +1055,16 @@ left: 0;
   height: 15px;
   fill: var(--invert-text-color);
   opacity: 0;
-  transition-property: background-color;
+  transition-property: background-color ;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.checkbox-input:checked + .checkbox-control{
-  border: 2px solid var(--accent);
-}
+
 
 .checkbox-input:checked + .checkbox-icon{
   background-color: var(--accent);
   opacity: 1;
+  outline: 2px solid var(--accent);
 
 }
